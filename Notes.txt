@@ -1,0 +1,23 @@
+
+ t(제약시)가 낮아질수록 모든 계수의 크기는 감소 (왜냐면, beta+beta의 절대값 <= t)
+
+ Q3(75%)- Q1 = IQR
+ 
+ IQR*(1.5) = 75%에서 outliner 밖으로 나간 거리
+ 
+ 에러E(Y) = beta + betaX
+ 
+ 에러 개념: 노이즈+바이어스+베리언스
+ 
+ Regression 모델의 정성도 판단 
+ R^2 = 1- SSR/SST(SSR+SSE)= SSE/ SSR, 고로 R이 높아지면 E에러는 낮아진다
+ -> 값이 0.25정도가 유효함
+ 
+ -Hyperparameter lamba를 튜닝할 때, GridsearhCV를 통해 돌출
+ -Linear model 시, X's scaling 필수
+ 
+ Lasso 와 Ridge의 차이: beta =0 (마름모의 영역) 절대값의 영역
+ 
+ 최고의 방법: Coordinate descent Algorithm
+ 
+ 
